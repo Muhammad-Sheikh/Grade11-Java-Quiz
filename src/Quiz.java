@@ -55,8 +55,8 @@ public  void test()
 
               currentvalidPool[(int) currentRand] = 0;
               questions.setQuestion1("What does KAY/O stand for?");
-              questions.setAnswer1("A");
-              questions.setOptions1(new String[] {"Kill All Your Opponents", "Nothing", "Keep All Your Osmium", "Keep All Your 0's"});
+              questions.setAnswer1("Kill All Your Opponents");
+              questions.setOptions1(new String[] {"Kill All Your Opponents", "Nothing", "Knock Out!", "Keep All Your 0's"});
 
 
           if(currentvalidPool[(int) currentRand] == 2)
@@ -134,7 +134,6 @@ class Questions
         return Question1;
     }
     public boolean checkAnswer1(int toCheck) {
-        System.out.println(Question1Options[1]);
         return Objects.equals(Answer1, Question1Options[toCheck]);
     }
     public void setAnswer1(String newAnswer) {
